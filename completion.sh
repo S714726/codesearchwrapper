@@ -3,10 +3,14 @@
 
 _codesearch() {
     COMPREPLY=()
-    if [ $COMP_CWORD -eq 1 ]; then
+    if [ $COMP_CWORD -eq 1 ] && [ -d "$HOME/.csearchindex" ]; then
         local cur
         cur=${COMP_WORDS[COMP_CWORD]}
         COMPREPLY=( $(compgen -W "$(ls -1 $HOME/.csearchindex/)" -- $cur) )
+        return 0
+    fi
+    if [ "$COMP_WORDS" == "cindex" ] && [ $COMP_CWORD -ne 1 ]; then
+        _filedir -d
         return 0
     fi
     return 0
