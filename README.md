@@ -8,8 +8,6 @@ This script tries to help by replacing the default search index file with a
 directory full of different index files. You access them with a new argument to
 csearch/cindex.
 
-Shell alias/tab-completion to come...perhaps.
-
 License
 -------
 Copyright © 2013 S714726

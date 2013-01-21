@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Do something nifty like aliasing "csearch" to "codesearchwrapper csearch $@"
-#   and "cindex" to "codesearchwrapper cindex $@"
+# Alias this script to the original names for genuine convenience
+#   alias csearch='bash ~/bin/codesearchwrapper.sh csearch'
+#   alias cindex='bash ~/bin/codesearchwrapper.sh cindex'
 
 CSEARCH="/usr/local/bin/csearch"
 CINDEX="/usr/local/bin/cindex"
