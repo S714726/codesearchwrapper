@@ -3,9 +3,9 @@
 
 _codesearch() {
     COMPREPLY=()
+    local cur
+    cur=${COMP_WORDS[COMP_CWORD]}
     if [ $COMP_CWORD -eq 1 ] && [ -d "$HOME/.csearchindex" ]; then
-        local cur
-        cur=${COMP_WORDS[COMP_CWORD]}
         COMPREPLY=( $(compgen -W "$(ls -1 $HOME/.csearchindex/)" -- $cur) )
         return 0
     fi

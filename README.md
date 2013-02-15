@@ -8,6 +8,9 @@ This script tries to help by replacing the default search index file with a
 directory full of different index files. You access them with a new argument to
 csearch/cindex.
 
+Bash completion depends on (you guessed it)
+[Bash Completion](http://bash-completion.alioth.debian.org/).
+
 License
 -------
 Copyright © 2013 S714726
